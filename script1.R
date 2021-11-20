@@ -23,9 +23,6 @@ ggplot(sdat,
 #str_to_title(format(Sys.Date(), '%A, %d de %B de %Y'))
 
 
-
-
-
 ####################################################################################################
 #paste0(str_to_title(format(Sys.Date(), '%A, %d ')), "de ", 
 #       str_to_title(format(Sys.Date(), '%B ')), "de ",
