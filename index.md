@@ -4,6 +4,7 @@ author: "Deiverson Almeida"
 date: "19/11/2021"
 output: 
   html_document:
+    df_print: kable
     keep_md: true 
     css: mycss.css
     fig_height: 6
@@ -21,10 +22,70 @@ When you click the **Knit** button a document will be generated that includes bo
 
 
 ```r
-plot(cars)
+head(cars)
 ```
 
-![](index_files/figure-html/cars-1.png)<!-- -->
+<div class="kable-table">
+
+| speed| dist|
+|-----:|----:|
+|     4|    2|
+|     4|   10|
+|     7|    4|
+|     7|   22|
+|     8|   16|
+|     9|   10|
+
+</div>
+
+
+
+```r
+knitr::kable(head(cars), align = "cc")
+```
+
+
+
+| speed | dist |
+|:-----:|:----:|
+|   4   |  2   |
+|   4   |  10  |
+|   7   |  4   |
+|   7   |  22  |
+|   8   |  16  |
+|   9   |  10  |
+
+```r
+knitr::kable(head(cars), align = "lr")
+```
+
+
+
+|speed | dist|
+|:-----|----:|
+|4     |    2|
+|4     |   10|
+|7     |    4|
+|7     |   22|
+|8     |   16|
+|9     |   10|
+
+```r
+knitr::kable(head(cars), align = "ll")
+```
+
+
+
+|speed |dist |
+|:-----|:----|
+|4     |2    |
+|4     |10   |
+|7     |4    |
+|7     |22   |
+|8     |16   |
+|9     |10   |
+
+
 
 ## Including Plots
 

@@ -441,8 +441,148 @@ pre code {
 <h2>R Markdown</h2>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>plot(cars)</code></pre>
-<p><img src="data:image/png;base64,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" /><!-- --></p>
+<pre class="r"><code>head(cars)</code></pre>
+<div class="kable-table">
+<table>
+<thead>
+<tr class="header">
+<th align="right">speed</th>
+<th align="right">dist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">10</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="right">22</td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="right">9</td>
+<td align="right">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre class="r"><code>knitr::kable(head(cars), align = &quot;cc&quot;)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">speed</th>
+<th align="center">dist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">4</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="center">7</td>
+<td align="center">22</td>
+</tr>
+<tr class="odd">
+<td align="center">8</td>
+<td align="center">16</td>
+</tr>
+<tr class="even">
+<td align="center">9</td>
+<td align="center">10</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>knitr::kable(head(cars), align = &quot;lr&quot;)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">speed</th>
+<th align="right">dist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="right">10</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">7</td>
+<td align="right">22</td>
+</tr>
+<tr class="odd">
+<td align="left">8</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="left">9</td>
+<td align="right">10</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>knitr::kable(head(cars), align = &quot;ll&quot;)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">speed</th>
+<th align="left">dist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">4</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">10</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">4</td>
+</tr>
+<tr class="even">
+<td align="left">7</td>
+<td align="left">22</td>
+</tr>
+<tr class="odd">
+<td align="left">8</td>
+<td align="left">16</td>
+</tr>
+<tr class="even">
+<td align="left">9</td>
+<td align="left">10</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="including-plots" class="section level2">
 <h2>Including Plots</h2>
